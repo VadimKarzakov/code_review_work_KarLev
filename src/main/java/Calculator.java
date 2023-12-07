@@ -20,5 +20,6 @@ public class Calculator {
 
     public int solver(int a, int b, int c) {
         return add(a, add(b, c));
+    }
 
 }
