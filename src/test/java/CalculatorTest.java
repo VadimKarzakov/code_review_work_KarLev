@@ -39,8 +39,13 @@ class CalculatorTest {
     @Test
     void solver() {
         Calculator calc = new Calculator();
+
         assertEquals(10, calc.solver(1,5,4));
         assertEquals(20, calc.solver(10,5,5));
         assertEquals(40, calc.solver(10,20,20));
+
+        assertEquals(10, calc.solver(2,2,4));
+        assertEquals(20, calc.solver(10,5,2));
+        assertEquals(30, calc.solver(10,2,10));
     }
 }
